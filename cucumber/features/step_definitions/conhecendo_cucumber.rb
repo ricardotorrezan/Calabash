@@ -1,7 +1,14 @@
 #first feature
 
 Dado(/^que eu estou aprendendo comandos$/) do
-  puts 'Dados feature 1'
+  @nome_cliente = Faker::Name.name
+  @cpf = Faker::CPF.Numeric
+  @agencia = Faker::Base.numerify('#####-#')
+  @conta = Faker::Base.numerify('#####-##')
+  puts @nome_cliente
+  puts @cpf
+  puts @agencia 
+  puts @conta
 end
 
 Quando(/^escrever os comandos$/) do

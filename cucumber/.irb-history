@@ -1,0 +1,16 @@
+reinstall
+reinstall_apps
+exit
+reinstall_apps
+start_test_server_in_backgorund
+start_test_server_in_background
+query('*')
+query('android.widget.button')
+query('android.widget.Button')
+touch('android.widget.Button', id:'btnHistorico')
+exit
+exit
+query('*')
+exit
+query('*')
+exit
