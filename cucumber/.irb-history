@@ -29,3 +29,15 @@ check_element_exists("*id:'txtResultado' marked:'#{query("* id:'txtResultado'", 
 start_test_server_in_background
 start_test_server_in_background
 exit
+exi
+reinstall_apps
+start_test_server_in_background
+shutdown_test_server
+start_test_server_in_background
+query('*')
+perform_action('drag', 99, 1, 50, 50, 5)
+perform_action --help
+perform_action
+sw
+execute_
+exit
