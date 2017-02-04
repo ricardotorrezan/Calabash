@@ -1,9 +1,3 @@
-reinstall
-reinstall_apps
-exit
-reinstall_apps
-start_test_server_in_backgorund
-start_test_server_in_background
 query('*')
 query('android.widget.button')
 query('android.widget.Button')
@@ -40,4 +34,17 @@ perform_action --help
 perform_action
 sw
 execute_
+exit
+start_test_server_in_background
+flick(:left)
+perform_action('drag', 99, 1, 50, 50, 5)
+perform_action('swipe', 99, 1, 50, 50, 5)
+perform_action('swipe', 'left')
+perform_action('swipe', 'right')
+performAction('swipe')
+performAction('swipe', 'left')
+performAction('swipe', 'left')
+performAction('drag', 90, 0, 50, 50, 50)
+performAction('drag', 90, 0, 50, 50, 50)
+query('*')
 exit
