@@ -10,7 +10,39 @@ query('android.widget.Button')
 touch('android.widget.Button', id:'btnHistorico')
 exit
 exit
-query('*')
+
 exit
 query('*')
 exit
+start_test_server_in_background
+touch('android.widget.Button', *args)
+touch('android.widget.Button', id:'btnCep', *args)
+query('android.widget.Button', *args)
+query('android.widget.Button', id:'btnCep', *args)
+a = query('android.widget.Button', id:'btnCep')
+a = query("android.widget.Button id:'btnCep')
+a.text
+exit
+ :timeout=> 10)
+wait_for_elements_exist("android.widget.Button marked:'HISTÓRICO'", :timeout=> 10)
+wait_for_elements_exist("android.widget.Button id:'HISTÓRICO'", :timeout=> 10)
+wait_for_elements_exist("android.widget.Button id:'btnCep'", :timeout=> 10)
+touch('android.widget.Button', id:'btnCep')
+touch('android.widget.TextView')
+keyboard_enter_text("01526060")
+hide_soft_keyboard
+touch('android.widget.Button', id:'btnChamaBuscaCEP')
+query('*')
+wait_for_elements_exist("android.widget.Button id:'HISTÓRICO'", :timeout=> 10)
+wait_for_elements_exist("android.support.v7.widget.AppCompatTextView marked:'IBGE 3550308'", :timeout => 10)
+wait_for_elements_exist("android.support.v7.widget.AppCompatTextView marked:'IBGE'", :timeout => 10)
+wait_for_elements_exist("android.support.v7.widget.AppCompatTextView marked:'/^IBGE.*$/'", :timeout => 10)
+wait_for_elements_exist("android.support.v7.widget.AppCompatTextView marked:'"/^IBGE.*$/"'", :timeout => 10)
+wait_for_elements_exist("android.support.v7.widget.AppCompatTextView marked:/^IBGE.*$/", :timeout => 10)
+start_test_server_in_background
+touch('android.widget.Button', id:'btnCep')
+touch('android.widget.TextView')
+keyboard_enter_text("01526060")
+hide_soft_keyboard
+touch('android.widget.Button', id:'btnChamaBuscaCEP')
+wait_for_elements_exist("android.support.v7.widget.AppCompatTextView marked:''+/^IBGE.*$/+'', :timeout => 10)
