@@ -1,3 +1,9 @@
+reinstall
+reinstall_apps
+exit
+reinstall_apps
+start_test_server_in_backgorund
+start_test_server_in_background
 query('*')
 query('android.widget.button')
 query('android.widget.Button')
@@ -17,34 +23,20 @@ start_test_server_in_background
 quqery('*')
 query('*')
 exit
+start
 start_test_server_in_background
-check_element_exists("* id:'txtResultado' marked:'#{query("* id:'txtResultado'", :getText)}'")
-check_element_exists("*id:'txtResultado' marked:'#{query("* id:'txtResultado'", :getText)}'")
-start_test_server_in_background
-start_test_server_in_background
-exit
-exi
+"* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText: Faker::Base.numerify(0#)
+query("* id:'txtLado1'", setText: Faker::Base.numerify(0#))
+query("* id:'txtLado1'", setText: Faker::Base.numerify("0#"))
+query("* id:'txtLado1'", setText: Faker::Base.numerify("0#"))
+query("* id:'txtLado1'", setText: Faker::Base.numerify("#"))
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
 reinstall_apps
-start_test_server_in_background
-shutdown_test_server
-start_test_server_in_background
-query('*')
-perform_action('drag', 99, 1, 50, 50, 5)
-perform_action --help
-perform_action
-sw
-execute_
-exit
-start_test_server_in_background
-flick(:left)
-perform_action('drag', 99, 1, 50, 50, 5)
-perform_action('swipe', 99, 1, 50, 50, 5)
-perform_action('swipe', 'left')
-perform_action('swipe', 'right')
-performAction('swipe')
-performAction('swipe', 'left')
-performAction('swipe', 'left')
-performAction('drag', 90, 0, 50, 50, 50)
-performAction('drag', 90, 0, 50, 50, 50)
-query('*')
+start_
+start_exist
 exit
