@@ -1,4 +1,4 @@
-require 'rspec/expectations'
+#require 'rspec/expectations'
 require 'calabash-android/management/app_installation'
 
 AfterConfiguration do |config|
