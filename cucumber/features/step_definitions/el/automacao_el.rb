@@ -27,7 +27,7 @@ end
 Então(/^preencho os dados principais$/) do
   query("* id:'etName'", setText: @name)
   query("* id:'rbMale'", :setChecked => true)
-  query("* id:'etBirthName'", setText: @data_aniversario)
+  query("* id:'etBirthDate'", setText: @data_aniversario)
   query("* id:'etEmail'", setText: @email)
   query("* id:'etCep'", setText: '01526-060')
   touch("* id:'btConfirm'")

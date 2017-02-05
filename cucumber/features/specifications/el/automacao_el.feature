@@ -14,4 +14,18 @@ Cenário: Cadastro de novo usuário
   E preencho os dados principais
   E escolho a escolaridade
   E escolho a area de atuacao
-  E finalizo o cadastro
+  Então finalizo o cadastro
+
+
+  @dados_cadastrais
+  Cenário: Agendar uma entrevista
+
+    Dado que eu acesse a home do Aplicativo
+    Quando eu clicar em Entrar
+    E informar o telefone
+    Então deverei ser direcionado para a tela de cadastro
+    E preencho os campos iniciais
+    E preencho os dados principais
+    E escolho a escolaridade
+    E escolho a area de atuacao
+    Então finalizo o cadastro
