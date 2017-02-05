@@ -1,8 +1,9 @@
 #language: pt
 
-Funcionalidade: Cadastrando um novo usuário    
+Funcionalidade: Cadastrando um novo usuário
 
-
+@dados_cadastrais
+@cadastro_el
 Cenário: Cadastro de novo usuário
 
   Dado que eu acesse a home do Aplicativo
@@ -10,3 +11,7 @@ Cenário: Cadastro de novo usuário
   E informar o telefone
   Então deverei ser direcionado para a tela de cadastro
   E preencho os campos iniciais
+  E preencho os dados principais
+  E escolho a escolaridade
+  E escolho a area de atuacao
+  E finalizo o cadastro
