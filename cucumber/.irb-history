@@ -23,9 +23,20 @@ start_test_server_in_background
 quqery('*')
 query('*')
 exit
+start
 start_test_server_in_background
-check_element_exists("* id:'txtResultado' marked:'#{query("* id:'txtResultado'", :getText)}'")
-check_element_exists("*id:'txtResultado' marked:'#{query("* id:'txtResultado'", :getText)}'")
-start_test_server_in_background
-start_test_server_in_background
+"* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText: Faker::Base.numerify(0#)
+query("* id:'txtLado1'", setText: Faker::Base.numerify(0#))
+query("* id:'txtLado1'", setText: Faker::Base.numerify("0#"))
+query("* id:'txtLado1'", setText: Faker::Base.numerify("0#"))
+query("* id:'txtLado1'", setText: Faker::Base.numerify("#"))
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+query("* id:'txtLado1'", setText:"13")
+reinstall_apps
+start_
+start_exist
 exit
